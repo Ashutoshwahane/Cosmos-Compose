@@ -1,4 +1,4 @@
-package com.ashutoshwahane.myapplication
+package com.ashutoshwahane.modernandroid
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

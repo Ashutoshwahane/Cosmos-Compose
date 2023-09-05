@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.ashutoshwahane.domain2"
+    namespace = "dev.ashutoshwahane.domain"
     compileSdk = 34
 
     defaultConfig {

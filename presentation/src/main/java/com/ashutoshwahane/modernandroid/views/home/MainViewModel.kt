@@ -1,4 +1,4 @@
-package com.ashutoshwahane.myapplication.views.home
+package com.ashutoshwahane.modernandroid.views.home
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

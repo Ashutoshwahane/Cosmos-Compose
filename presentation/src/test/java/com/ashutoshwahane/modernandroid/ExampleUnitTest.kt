@@ -1,4 +1,4 @@
-package com.ashutoshwahane.myapplication
+package com.ashutoshwahane.modernandroid
 
 import org.junit.Test
 

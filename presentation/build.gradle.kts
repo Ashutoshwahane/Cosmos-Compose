@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ashutoshwahane.myapplication"
+    namespace = "com.ashutoshwahane.modernandroid"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ashutoshwahane.myapplication"
+        applicationId = "com.ashutoshwahane.modernandroid"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

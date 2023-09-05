@@ -1,4 +1,4 @@
-package com.ashutoshwahane.myapplication.ui.theme
+package com.ashutoshwahane.modernandroid.ui.theme
 
 import android.app.Activity
 import android.os.Build
