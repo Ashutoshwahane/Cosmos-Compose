@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModernAndroid"
 include(":presentation")
-include(":domain")
 include(":data")
+include(":domain")
