@@ -23,7 +23,6 @@
         <activity
             android:name=".views.home.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ModernAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
