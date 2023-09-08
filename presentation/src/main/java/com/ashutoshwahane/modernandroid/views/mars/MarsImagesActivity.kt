@@ -21,11 +21,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import coil.compose.AsyncImage
 import com.ashutoshwahane.modernandroid.views.mars.components.MarsImageScreen
 import com.ashutoshwahane.modernandroid.views.mars.ui.theme.ModernAndroidTheme
 import dagger.hilt.android.AndroidEntryPoint
 import dev.ashutoshwahane.domain.model.mars.MarsImageModel
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MarsImagesActivity : ComponentActivity() {
@@ -33,7 +35,10 @@ class MarsImagesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel.getMarsImages()
+
+        lifecycleScope.launch {
+            viewModel.getMarsImages()
+        }
         val imageList = viewModel.marImageList.value
 
         setContent {
@@ -43,7 +48,7 @@ class MarsImagesActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MarsImageScreen(viewModel)
+                    MarsImageScreen(viewModel,this)
                 }
             }
         }

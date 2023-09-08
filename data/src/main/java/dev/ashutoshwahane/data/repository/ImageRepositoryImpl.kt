@@ -1,5 +1,6 @@
 package dev.ashutoshwahane.data.repository
 
+import android.net.http.HttpException
 import dev.ashutoshwahane.data.BuildConfig
 import dev.ashutoshwahane.data.datasource.api.entity.mars_entity.Photo
 import dev.ashutoshwahane.data.datasource.api.services.ImageApi
@@ -12,10 +13,11 @@ import javax.inject.Inject
 
 class ImageRepositoryImpl @Inject constructor(
     private val api: ImageApi
-): ImageRepository {
+) : ImageRepository {
     override suspend fun getApodImage(): ImageModel {
         return api.getApodImage(BuildConfig.API_KEY).ToModel()
     }
+
 
     override suspend fun getMarsImage(): List<MarsImageModel> {
         return api.getMarsImage(BuildConfig.API_KEY).photos.map { it.toModel() }
