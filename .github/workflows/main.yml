@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Lint Test
-        uses: ./gradlew lintDebug
+        run: ./gradlew lintDebug
 
       - name: Upload html test report
         uses: actions/upload-artifact@v2
