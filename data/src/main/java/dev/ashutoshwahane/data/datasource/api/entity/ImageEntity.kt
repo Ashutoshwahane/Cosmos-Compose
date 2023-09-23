@@ -1,7 +1,6 @@
 package dev.ashutoshwahane.data.datasource.api.entity
 
 import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
 
 data class ImageEntity(
 

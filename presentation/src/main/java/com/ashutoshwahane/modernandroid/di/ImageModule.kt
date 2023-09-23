@@ -27,5 +27,4 @@ class ImageModule {
         return repositoryImpl
     }
 
-
 }

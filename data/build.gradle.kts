@@ -70,6 +70,7 @@ dependencies {
     kapt(DaggerHilt.hiltCompiler)
 
     implementation(Coroutines.coroutines)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 
    
 

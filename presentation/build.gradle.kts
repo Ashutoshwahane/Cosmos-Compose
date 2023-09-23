@@ -90,6 +90,14 @@ dependencies {
 
 
 
+    implementation("androidx.glance:glance-appwidget:1.0.0")
+    implementation("androidx.glance:glance-material3:1.0.0")
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+
+    implementation("androidx.work:work-runtime-ktx:2.8.1")
+
+
 }
 
 kapt {

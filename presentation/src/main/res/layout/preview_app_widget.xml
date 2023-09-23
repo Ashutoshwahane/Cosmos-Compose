@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground"
+    android:theme="@style/MyWidgetTheme"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cosmos_icon"
+        android:id="@+id/app_logo"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/cosmos"
+        android:textStyle="bold"
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:id="@+id/apod_tv"/>
+
+
+
+</LinearLayout>

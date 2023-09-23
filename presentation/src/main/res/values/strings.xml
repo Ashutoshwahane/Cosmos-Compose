@@ -2,4 +2,8 @@
     <string name="app_name">ModernAndroid</string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_mars_images">MarsImagesActivity</string>
+    <string name="apod">APOD :</string>
+    <string name="cosmos">COSMOS</string>
+    <string name="desc">Cosmos app POS for Widgets</string>
+    <string name="update">Update</string>
 </resources>

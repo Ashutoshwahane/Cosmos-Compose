@@ -2,4 +2,7 @@
 <resources>
 
     <style name="Theme.ModernAndroid" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+    <style name="MyWidgetTheme" parent="Theme.Material3.DynamicColors.DayNight" />
 </resources>

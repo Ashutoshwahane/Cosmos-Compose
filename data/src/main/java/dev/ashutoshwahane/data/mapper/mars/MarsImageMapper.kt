@@ -1,7 +1,7 @@
 package dev.ashutoshwahane.data.mapper.mars
 
-import dev.ashutoshwahane.data.datasource.api.entity.mars_entity.Photo
 import dev.ashutoshwahane.domain.model.mars.MarsImageModel
+import entity.Photo
 
 
 fun Photo.toModel(): MarsImageModel {

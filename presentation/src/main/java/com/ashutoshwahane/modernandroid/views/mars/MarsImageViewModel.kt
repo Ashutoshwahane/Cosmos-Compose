@@ -26,7 +26,8 @@ class MarsImageViewModel @Inject constructor(private val getMarsImageUseCase: Ge
         mutableStateOf(emptyList())
     }
 
-    suspend fun getMarsImages() {
+    fun getMarsImages() {
+        viewModelScope.launch {
             getMarsImageUseCase().onEach { result ->
                 when (result) {
                     is Resource.Error -> {
@@ -46,7 +47,9 @@ class MarsImageViewModel @Inject constructor(private val getMarsImageUseCase: Ge
                     }
                 }
 
-            }.launchIn(viewModelScope)
+            }
+        }
+
 
 
 

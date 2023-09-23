@@ -1,8 +1,6 @@
 package dev.ashutoshwahane.data.repository
 
-import android.net.http.HttpException
 import dev.ashutoshwahane.data.BuildConfig
-import dev.ashutoshwahane.data.datasource.api.entity.mars_entity.Photo
 import dev.ashutoshwahane.data.datasource.api.services.ImageApi
 import dev.ashutoshwahane.data.mapper.ToModel
 import dev.ashutoshwahane.data.mapper.mars.toModel
