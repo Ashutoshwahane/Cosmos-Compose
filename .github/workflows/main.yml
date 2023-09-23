@@ -14,6 +14,12 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+              distribution: "temurin"
+              java-version: 17
+
       - name: Run Lint Test
         run: ./gradlew lintDebug
 
