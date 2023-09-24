@@ -1,0 +1,30 @@
+name: Build APK
+on:
+  push:
+    branches: [ "dev" ]
+
+jobs:
+  Build-APK:
+    name: Running on latest ubuntu machine
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the latest code
+        uses: actions/checkout@v2
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: "temurin"
+          java-version: 17
+
+      - name: Grant Permission to Execute
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: bash ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK to Github Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
