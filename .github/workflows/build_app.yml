@@ -20,6 +20,11 @@ jobs:
       - name: Grant Permission to Execute
         run: chmod +x gradlew
 
+      - name: API_KEY
+        env:
+          API_KEY: ${{API_KEY}}
+        run: echo API_KEY=\"$API_KEY\" > local.properties
+
       - name: Build debug APK
         run: bash ./gradlew assembleDebug --stacktrace
 
