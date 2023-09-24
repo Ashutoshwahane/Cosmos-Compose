@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: lint-results-test-report.html
-          path: presentation/build/reports/lint-results-test-report.html
+          path: presentation/build/reports/lint-results-debug.html
 
       - name: List Contents of Directory
         run: ls -R presentation/build/reports
