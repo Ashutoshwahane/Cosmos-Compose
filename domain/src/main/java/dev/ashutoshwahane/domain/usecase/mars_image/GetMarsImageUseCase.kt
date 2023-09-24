@@ -11,13 +11,7 @@ import javax.inject.Inject
 class GetMarsImageUseCase @Inject constructor(
     val repository: ImageRepository
 ) {
-    suspend operator fun  invoke(): Flow<Resource<List<MarsImageModel>>> = flow {
-        try {
-            emit(Resource.Loading())
-            val marsImageList = repository.getMarsImage()
-            emit(Resource.Success(marsImageList))
-        }catch (e:IOException){
-            emit(Resource.Error("Couldn't reach server check your internet connection"))
-        }
+    suspend operator fun  invoke(): List<MarsImageModel> {
+       return repository.getMarsImage()
     }
 }

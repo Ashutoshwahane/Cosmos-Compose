@@ -10,9 +10,9 @@
         android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/cosmos_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/cosmos_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.ModernAndroid"
         tools:targetApi="31">
@@ -27,7 +27,7 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/Theme.ModernAndroid" />
         <activity
-            android:name=".views.home.MainActivity"
+            android:name=".views.home.HomeActivity"
             android:exported="true"
             android:theme="@style/Theme.ModernAndroid">
             <intent-filter>

@@ -63,6 +63,8 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.compose.foundation:foundation-android:1.5.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -72,7 +74,6 @@ dependencies {
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
     implementation(project(ProjectModule.domain))
     implementation(project(ProjectModule.data))
 
@@ -96,6 +97,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     implementation("androidx.work:work-runtime-ktx:2.8.1")
+
+    implementation("androidx.compose.ui:ui-util:1.5.1")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
 
 }

@@ -1,7 +1,9 @@
 package dev.ashutoshwahane.data.mapper.mars
 
 import dev.ashutoshwahane.domain.model.mars.MarsImageModel
+import dev.ashutoshwahane.domain.model.mars.RoverModel
 import entity.Photo
+import entity.Rover
 
 
 fun Photo.toModel(): MarsImageModel {
