@@ -1,7 +1,7 @@
-name: Build APK
+name: Unit Test
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 jobs:
   Build-APK:
@@ -25,11 +25,6 @@ jobs:
       - name: Grant Permission to Execute
         run: chmod +x gradlew
 
-      - name: Build debug APK
-        run: bash ./gradlew assembleDebug --stacktrace
+      - name: Run unit test case
+        run: ./gradlew :domain:testDebugUnitTest --tests "dev.ashutoshwahane.domain.usecase.GetApodImageUseCaseTest"
 
-      - name: Upload APK to Github Artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: app
-          path: presentation/build/outputs/apk/debug/presentation-debug.apk
