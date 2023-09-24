@@ -14,9 +14,6 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
-      - name: Clean all artifacts
-        uses: c-hive/gha-remove-artifacts@v3
-
       - name: Set up Java
         uses: actions/setup-java@v2
         with:
