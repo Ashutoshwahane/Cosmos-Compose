@@ -22,7 +22,7 @@ jobs:
 
       - name: API_KEY
         env:
-          API_KEY: ${{API_KEY}}
+          API_KEY: ${{secrets.API_KEY}}
         run: echo API_KEY=\"$API_KEY\" > local.properties
 
       - name: Run Lint Test
