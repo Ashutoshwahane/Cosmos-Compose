@@ -2,9 +2,9 @@
 name: CI
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -19,6 +19,11 @@ jobs:
         with:
               distribution: "temurin"
               java-version: 17
+
+      - name: API_KEY
+        env:
+          API_KEY: ${{API_KEY}}
+        run: echo API_KEY=\"$API_KEY\" > local.properties
 
       - name: Run Lint Test
         run: ./gradlew lintDebug
