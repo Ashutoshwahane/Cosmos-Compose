@@ -36,7 +36,7 @@ class HomeActivity : ComponentActivity() {
                 }
             }
         }
-        viewModel.getMarsImages()
+       // viewModel.getMarsImages()
     }
 }
 

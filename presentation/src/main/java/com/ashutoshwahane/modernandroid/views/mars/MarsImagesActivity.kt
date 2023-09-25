@@ -50,9 +50,6 @@ class MarsImagesActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
 
-        lifecycleScope.launch {
-            viewModel.getMarsImages()
-        }
 
         setContent {
             ModernAndroidTheme {

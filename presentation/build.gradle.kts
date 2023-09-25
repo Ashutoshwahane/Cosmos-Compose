@@ -101,6 +101,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-util:1.5.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
+    implementation("com.google.code.gson:gson:2.10.1")
+
 
 }
 
